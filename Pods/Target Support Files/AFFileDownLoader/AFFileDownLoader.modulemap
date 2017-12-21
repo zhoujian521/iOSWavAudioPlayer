@@ -1,0 +1,6 @@
+framework module AFFileDownLoader {
+  umbrella header "AFFileDownLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}

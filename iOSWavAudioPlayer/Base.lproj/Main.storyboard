@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aW4-hy-f7w"/>
+                        <viewControllerLayoutGuide type="bottom" id="xwR-GE-OPE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Od-ZW-x6r">
+                                <rect key="frame" x="225" y="160" width="112.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.98166266639999999" blue="0.46167911099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="stopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qa-DV-RFB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OaW-bO-fL5">
+                                <rect key="frame" x="15" y="30" width="345" height="100"/>
+                                <color key="backgroundColor" red="0.39232988959999998" green="1" blue="0.068479188770000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="x2w-nL-9XM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-31-gLC">
+                                <rect key="frame" x="37.5" y="160" width="112.5" height="40"/>
+                                <color key="backgroundColor" red="0.3160132973" green="1" blue="0.1411298929" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vk7-aC-bRC"/>
+                                </constraints>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="playBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BfN-M4-pEK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OaW-bO-fL5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="9RE-EV-gOn"/>
+                            <constraint firstAttribute="trailing" secondItem="OaW-bO-fL5" secondAttribute="trailing" constant="15" id="HdA-RV-B93"/>
+                            <constraint firstItem="5Od-ZW-x6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="IPS-SH-0hw"/>
+                            <constraint firstItem="5Od-ZW-x6r" firstAttribute="height" secondItem="ALo-31-gLC" secondAttribute="height" id="UyJ-wM-YfJ"/>
+                            <constraint firstItem="ALo-31-gLC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="cmc-WH-3AZ"/>
+                            <constraint firstItem="ALo-31-gLC" firstAttribute="top" secondItem="OaW-bO-fL5" secondAttribute="bottom" constant="30" id="gmE-UL-RSO"/>
+                            <constraint firstItem="ALo-31-gLC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="lA5-6E-9bS"/>
+                            <constraint firstItem="OaW-bO-fL5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="mHh-V9-gyg"/>
+                            <constraint firstItem="5Od-ZW-x6r" firstAttribute="centerY" secondItem="ALo-31-gLC" secondAttribute="centerY" id="qbd-r6-KfE"/>
+                            <constraint firstItem="5Od-ZW-x6r" firstAttribute="width" secondItem="ALo-31-gLC" secondAttribute="width" id="qzY-PB-AVY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iOSTextView" destination="OaW-bO-fL5" id="gX6-eU-oSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

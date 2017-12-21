@@ -1,0 +1,33 @@
+PODS:
+  - AFFileDownLoader (0.1.0):
+    - AFNetworking (~> 3.1)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ZJPlayer (0.1.0)
+
+DEPENDENCIES:
+  - AFFileDownLoader (~> 0.1.0)
+  - AFNetworking (~> 3.1.0)
+  - ZJPlayer (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  AFFileDownLoader: bc492daf78a6332ec6a63a0ed9c9086ef59ca404
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ZJPlayer: 6ccf02f56ddda4dc953125a2636d07441b1b7839
+
+PODFILE CHECKSUM: e25030994496682d72b8e1221c23a797379b759d
+
+COCOAPODS: 1.4.0.beta.2
