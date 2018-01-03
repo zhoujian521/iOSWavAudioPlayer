@@ -30,12 +30,12 @@
 //http://saas.ccod.com:9090/record/LTBD2017050502/Agent/20171031/TEL-17600669657_BFYTT_6506_20171031150303.wav
 //30分钟以上：
 //http://saas.ccod.com:9090/record/LTBD2017050502/Agent/20171010/TEL-13986180975_BFYTT_5411_20171010145757.wav
-//
+
 // http://wyxcdn.ccod.com/server/audio/TEL-18601908304_QNCSH_910016_20171214101435.wav
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.iOSTextView.text = @"http://saas.ccod.com:9090/record/LTBD2017050502/Agent/20171010/TEL-13986180975_BFYTT_5411_20171010145757.wav";
+    self.iOSTextView.text = @"http://wyxcdn.ccod.com/server/audio/TEL-18601908304_QNCSH_910016_20171214101435.wav";
 }
 
 // 播放
